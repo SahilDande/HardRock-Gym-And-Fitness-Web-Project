@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardRock Gym & Fitness Website Sign-In</title>
+    <script type="text/javascript">
+        function adminpassword()
+        {
+            var u=f.username.value;
+            var p=f.password.value;
+            var op="1253";
+            var ou="admin";
+            if(p==op && u==ou)
+            {
+                window.open('contact_tbl1.php');
+            }
+            else{
+                alert("Your Password or Username is Incorrect for Admin Sing-In !!!");
+            }
+        }
+    
+    </script>
+<style>
+    body{
+        background: url("Images/Gym\ Project\ Image1.jpg");
+    }
+    .signin{
+        background-color: rgb(80, 79, 79);
+        color: white;
+        text-align: center;
+        margin-top: 150px;
+        width: 450px;
+        height: 400px;
+        margin-left: 150px;
+        border: 5px solid turquoise;
+        border-radius: 7%;
+
+    }
+    .signin form{
+        color: black;
+        font-weight: bold;
+        margin-top: 65px;
+        font-size: 1.3rem;
+    }
+    .signin form .username-input{
+        margin-bottom: 3rem;
+        height: 1.5rem;
+    }
+    .signin form .password-input{
+        margin-bottom: 3rem;
+        height: 1.5rem;
+    }
+    form h2{
+        text-align: center;
+        color: black;
+        font-size: 2.3rem;
+    }
+    form .button{
+        height: 50px;
+        width: 90px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all .3s ease;
+        background-color: black;
+        border: 2px solid turquoise ;
+        color: turquoise;
+    }
+    form .button:hover{
+        color: black;
+        border: 2px solid black;
+        background-color: turquoise;
+    }
+    .marquee-class{
+        color: turquoise;
+        text-align: center;
+        width: 600px;
+        margin-left: 580px;
+        margin-top: 30px;
+        font-size: 1.6rem;
+    }
+</style>
+
+
+</head>
+
+<body>
+    <div class="marquee-class">
+    <h1><marquee behavior="scroll" direction="left">HardRock Gym & Fitness Center</marquee></h1>
+</div>
+    <div class="signin">
+
+    <form name="f" method="POST">
+        <h2>Sign-In</h2>
+        <label for="username" class="username-label">Username :</label>
+        <input type="text" placeholder="Enter Username" name="username" class="username-input" required><br>
+        <label for="password" class="password-label">Password :</label>
+        <input type="password" placeholder="Enter Password" name="password" class="password-input"><br>
+        <input type="submit" value="Admin" name="sign-in" class="button" required onclick="adminpassword()">
+    </form>
+</div>
+</body>
+</html>
