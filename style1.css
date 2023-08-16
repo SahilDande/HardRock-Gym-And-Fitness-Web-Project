@@ -1,0 +1,1607 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#f2f2f2da;
+    --secondary:#070606;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark);
+}
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,78% 94%,0 100%);
+}
+header nav{
+    position: sticky;
+    top: 0%;
+    background: var(--dark);
+}   
+.admin-img a{
+margin-left: -80px;
+}
+.admin-img{
+    width: 0px;
+    height: 20px;
+    margin-top: -7px;
+    margin-left: 180px;
+}
+.admin-img img{
+    height: 60px;
+    width: 60px;
+    margin-top: -140px;
+    margin-left: 210px;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    padding-right: 1rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    font-size: 1.1 rem;
+}
+header nav .left a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+header nav .branding img{
+    width: 85px;
+    filter: invert(100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: all .3s ease;
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    transition: all .3s ease;
+}
+.btn-secondary:hover{
+    background: var(--primary);
+    color: var(--secondary);
+}
+.record {
+    margin-left: 550px;
+    width: 3rem;
+    margin-top: -47px;
+}
+.record a button{
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid var(--secondary);
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: all .3s ease;
+    width: 16rem;
+    margin-left: 0rem;
+}
+.record a button:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-color: 2px solid var(--primary);
+}
+.right button{
+    margin-left: 5.5rem;
+}
+
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 10rem;
+}
+
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    width: 400px;
+}
+.hero .right
+{
+    color: var(--pure);
+    margin-top: -7rem;
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.6rem;
+}
+.hero .right h1{
+    font-size: 3.8rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+header .container2{
+    background: var(--ternary);
+}
+
+.line hr{
+    height: 5px;
+    color: var(--pure);
+    background-color: var(--pure);
+}
+footer{
+    background: var(--secondary);
+    padding: 5rem 0;
+    height:670px;
+    margin-left: -200px;
+}
+.quick-links{
+   text-align: center;
+    margin-left: 430px;
+    width: 300px;
+}
+.quick-links a.space{
+    margin-bottom: 2.8rem;
+}
+.quick-links a{
+    width: 100px;
+    text-decoration:none;
+    color: var(--pure);
+    transition: all .3s ease;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-bottom: 1.2rem;
+}
+.quick-links a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.quick-heading{
+    color: var(--pure);
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.quick-heading h2{
+    margin-left: -190px;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+footer span{
+    color: var(--primary);
+}
+footer .footer-logo{
+    margin-bottom: 2rem;
+    width: 180px;
+    filter: invert(90%);
+    margin-left: 835px;
+    margin-top: -70px;
+}
+footer.developer-contact{
+    text-align: center;
+    align-items: center;
+}
+.developer-contact{
+    color: var(--pure);
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: -370px;
+    width: 350px;
+    margin-left: 1160px;
+    text-align: center;
+}
+.developer-contact h2{
+    color: var(--pure);
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: center;
+}
+footer .developer-contact p{
+    margin-top: 30px;
+    color: var(--ternary);
+}
+footer .copyright{
+    color: var(--ternary);
+    text-align: center;
+}
+footer .social-icons{
+    margin-top: 100px;
+}
+footer .socials-heading h2{
+    color: var(--pure);
+    text-align: center;
+    margin-left: 890px;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: -150px;
+}
+footer .footer-socials a{
+    margin-top: -6rem;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all .3s ease;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 3px;
+}
+footer .social-icons a img{
+    margin-top: -6rem;
+    margin-bottom: 2rem;
+    width: 4%;
+    height: 4%;
+    padding: 0.5rem;
+}
+footer .social-icons a img#website{
+    margin-left: -175px;
+    padding: 0.3rem 0.3rem;
+    background-color: var(--pure);
+    transition: all .3s ease;
+}
+footer .social-icons a img#website:hover{
+    background-color: var(--primary);
+}
+footer .social-icons a img#facebook{
+    background-color: var(--pure);
+    padding: 0.2rem;
+    height: 4%;
+    width: 4%;
+    transition: all .3s ease;
+}
+footer .social-icons a img#facebook:hover{
+    background-color: var(--primary);
+}
+footer .social-icons a img#twitter{
+    background-color: var(--pure);
+    padding: 0;
+    height: 4%;
+    width: 4%;
+    transition: all .3s ease;
+}
+footer .social-icons a img#twitter:hover{
+    background-color: var(--primary);
+}
+
+footer .social-icons a img#pintrest{
+background-color: var(--pure);
+padding: 0.40rem;
+height: 4%;
+width: 4%;
+transition: all .3s ease;
+}
+footer .social-icons a img#pintrest:hover{
+    background-color: var(--primary);
+}
+footer .social-icons a img#instagram{
+    margin-top: -0.1rem;
+        background-color: var(--pure);
+        padding: 0.40rem;
+        height: 4.2%;
+        width: 4.7%;
+        transition: all .3s ease;
+}
+footer .social-icons a img#instagram:hover{
+    background-color: var(--primary);
+}
+footer .developer-name, .developer-contact{
+    margin-bottom: 1.5rem;
+    color: var(--ternary);
+}
+footer .copyright{
+    margin-left: 10rem;
+}
+/*------------------------------------------------------------------------*/
+/*-----------------------ABOUT--------------------------------------------*/
+
+header.header-about{
+    position: sticky;
+    top: 0%;
+    background-color: var(--dark);
+}
+section{
+    padding: 6rem 0;
+}
+section.about{
+    background: var(--pure);
+    padding-bottom: 100px;
+    clip-path: polygon(0 0, 100% 0%,100% 100%,50% 88%,0% 100%);
+    padding-bottom: 10rem;
+}
+section.about .about-img{
+    height: 450px;
+    width: 550px;
+    margin-right: 3rem;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+section.about .marquee-heading{
+    background: var(--secondary);
+    width: 280px;
+    height: 50px;
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+section.about h3 span{
+    color: var(--primary);
+    font-weight: 600;
+}
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--dark);
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+section.about .social{
+    display: flex;
+    width: 200px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all .3s ease;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    margin-left: 1rem;
+}
+section.about .social a img#website{
+    background-color: var(--secondary);
+    padding: 0.3rem 0.3rem;
+    height: 34px;
+    width: 34px;
+    transition: all .3s ease;
+    margin-right: 0.6rem;
+
+}
+section.about .social a img#website:hover{
+    background: var(--primary);
+}
+section.about .social a img#facebook{
+    padding: 0.2rem;
+    height: 35px;
+    width: 35px;
+    transition: all .3s ease;
+}
+section.about .social a img#facebook:hover{
+    background: var(--primary);
+}
+section.about .social a img#twitter{
+    padding: 0;
+    height: 35px;
+    width: 35px;
+    transition: all .3s ease;
+    margin-right: 0.8rem;
+}
+section.about .social a img#twitter:hover{
+    background: var(--primary);
+}
+section.about .social a img#pintrest{
+ background-color: var(--secondary);
+padding: 0.40rem;
+margin-right: 0.8rem;
+height: 32px;
+width: 32px;
+transition: all .3s ease;
+}
+section.about .social a img#pintrest:hover{
+    background: var(--primary);
+}
+section.about .social a img#instagram{
+    background-color: var(--secondary);
+    padding: 0.35rem 0.25rem;
+    height: 32px;
+    width: 32px;
+    transition: all .3s ease;
+}
+section.about .social a img#instagram:hover{
+    background: var(--primary);
+}
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+section.trainers{
+    background-color: var(--ternary);
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 25rem;
+}
+section.trainers p{
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+section.trainers .trainer1 p +center{
+    color: var(--secondary);
+}
+section.trainers .trainer1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+section.trainers .trainer1{
+    text-align: center;
+    object-fit: cover;
+    border: 3.5px solid black;
+    background-color: var(--light);
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+section.trainers .trainer1 span{
+    color: var(--dark);
+}
+section.trainers marquee{
+    font-size: 1.9rem;
+    height: 40px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: var(--pure);
+}
+section.trainers .marquee-heading{
+    justify-content: center;
+    width: 400px;
+    margin-left: 150px;
+    margin-bottom: 1.5rem ;
+    background-color: var(--secondary);
+    margin-bottom: 3rem;
+}
+section.trainers marquee span{
+    color: var(--primary);
+    font-weight: bolder;
+}
+section.trainers .trainer2 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+section.trainers .trainer2 p +center{
+    color: var(--primary);
+}
+section.trainers .trainer2{
+    text-align: center;
+    object-fit: cover;
+    border: 3.5px solid var(--pure);
+    background-color: var(--dark);
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+section.trainers .trainer2 p,span{
+    color: var(--pure);
+}
+section.trainers .trainer3 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+section.trainers .trainer3 p +center{
+    color: var(--secondary);
+}
+section.trainers .trainer3{
+    text-align: center;
+    object-fit: cover;
+    border: 3.5px solid var(--dark);
+    background-color: var(--primary);
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+section.trainers .trainer3 span{
+    color: var(--secondary);
+}
+
+/*--------------------------------------------------------------------*/
+/*---------------------------Services---------------------------------*/
+
+
+section.services {
+    background-color: var(--light);
+}
+section.services .container .marquee-heading{
+    margin-left: 335px;
+    margin-bottom: 2rem;
+}
+section.services .container .marquee-heading marquee{
+    color: var(--primary);
+}
+section.services .container h1{
+    font-size: 2.5rem;
+    background-color: var(--secondary);
+    height: 60px;
+    width: 350px;
+}
+section.services .container p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+section.services .card{
+    background-color: var(--pure);
+    padding: 3rem 2rem;
+    padding-bottom: 1.5rem;
+    border: 3px solid black;
+    transition: all .4s ease;
+}
+section.services .card:hover{
+    background-color: var(--secondary);
+    border: 3px solid var(--primary);
+}
+section.services .card:hover h2{
+    color: var(--pure);
+}
+section.services .card:hover a{
+    color: var(--pure);
+}
+section.services .card a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+section.services .card a:hover{
+    color: var(--primary);
+}
+section.services .card h2{
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+section.services .card #gym{
+    background: var(--primary);
+    height: 26%;
+    width: 35%;
+    margin-top: -30%;
+    margin-left: 30%;
+}
+section.services .card #dance{
+    background: var(--primary);
+    height: 25%;
+    width: 35%;
+    margin-top: -30%;
+    margin-left: 30%;
+}
+section.services .card #yoga{
+    background: var(--primary);
+    height: 25%;
+    width: 35%;
+    margin-top: -30%;
+    margin-left: 30%;
+}
+section.services .card #zumba{
+    background: var(--primary);
+    height: 24%;
+    width: 40%;
+    margin-top: -30%;
+    margin-left: 30%;
+}
+section.services .card #trainer{
+    background: var(--primary);
+    height: 25%;
+    width: 40%;
+    margin-top: -30%;
+    margin-left: 30%;
+}
+section.services .card #diet{
+    height: 25%;
+    width: 35%;
+    margin-top: -30%;
+    margin-left: 30%;
+}
+section.services .card-wrapper .card img{
+    border: 2px solid var(--secondary);
+}
+
+section.services-info .container{
+    text-align: center;
+
+}
+section.services-info{
+    background-color: var(--dark);
+}
+section.services-info marquee{
+    background-color:var(--secondary);
+    text-align: center;
+    width: 450px;   
+    margin-bottom: 4rem;
+}
+section.services-info h1 marquee{
+    color: var(--primary);
+    font-size: 2rem;
+}
+section.services-info #gym-info{
+    margin-bottom: 6rem;
+}
+
+section.services-info #gym-info ol{
+    text-align: left;
+    margin-left: -100px;
+    margin-bottom: 3rem;
+}
+section.services-info #gym-info ol li{
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+section.services-info #gym-info img{
+    border-radius: 5%;
+    object-fit: cover;
+    border: 4px groove var(--pure);
+   height: 420px; 
+   width: 550px;
+   margin-bottom: 2rem;
+  /* margin-left: 280px;*/
+}
+section.services-info #gym-info p{
+    color: var(--pure);
+    margin-bottom: 2.5rem;
+}
+section.services-info #gym-info span{
+    color: var(--primary);
+}
+
+
+
+section.services-info #dance-info{
+    margin-bottom: 6rem;
+}
+
+section.services-info #dance-info ol{
+    text-align: left;
+    margin-left: -100px;
+    margin-bottom: 3rem;
+}
+section.services-info #dance-info ol li{
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+section.services-info #dance-info img{
+    border-radius: 5%;
+    object-fit: cover;
+    border: 4px groove var(--pure);
+   height: 420px; 
+   width: 550px;
+   margin-bottom: 2rem;
+  /* margin-left: 280px;*/
+}
+section.services-info #dance-info p{
+    color: var(--pure);
+    margin-bottom: 2.5rem;
+}
+section.services-info #dance-info span{
+    color: var(--primary);
+}
+
+
+
+section.services-info #yoga-info{
+    margin-bottom: 6rem;
+}
+
+section.services-info #yoga-info ol{
+    text-align: left;
+    margin-left: -100px;
+    margin-bottom: 3rem;
+}
+section.services-info #yoga-info ol li{
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+section.services-info #yoga-info img{
+    border-radius: 5%;
+    object-fit: cover;
+    border: 4px groove var(--pure);
+   height: 420px; 
+   width: 550px;
+   margin-bottom: 2rem;
+  /* margin-left: 280px;*/
+}
+section.services-info #yoga-info p{
+    color: var(--pure);
+    margin-bottom: 2.5rem;
+}
+section.services-info #yoga-info span{
+    color: var(--primary);
+}
+
+
+
+section.services-info #zumba-info{
+    margin-bottom: 6rem;
+}
+
+section.services-info #zumba-info ol{
+    text-align: left;
+    margin-left: -100px;
+    margin-bottom: 3rem;
+}
+section.services-info #zumba-info ol li{
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+section.services-info #zumba-info img{
+    border-radius: 5%;
+    object-fit: cover;
+    border: 4px groove var(--pure);
+   height: 420px; 
+   width: 550px;
+   margin-bottom: 2rem;
+  /* margin-left: 280px;*/
+}
+section.services-info #zumba-info p{
+    color: var(--pure);
+    margin-bottom: 2.5rem;
+}
+section.services-info #zumba-info span{
+    color: var(--primary);
+}
+
+
+
+section.services-info #trainer-info{
+    margin-bottom: 6rem;
+}
+
+section.services-info #trainer-info ol{
+    text-align: left;
+    margin-left: -100px;
+    margin-bottom: 3rem;
+}
+section.services-info #trainer-info ol li{
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+section.services-info #trainer-info img{
+    border-radius: 5%;
+    object-fit: cover;
+    border: 4px groove var(--pure);
+   height: 420px; 
+   width: 550px;
+   margin-bottom: 2rem;
+  /* margin-left: 280px;*/
+}
+section.services-info #trainer-info p{
+    color: var(--pure);
+    margin-bottom: 2.5rem;
+}
+section.services-info #trainer-info span{
+    color: var(--primary);
+}
+section.services-info .trainer-contact{
+    background: var(--ternary);
+  width: 1200px;
+  height: 200px;
+  margin-bottom: 6rem;
+  margin-left: -55px;
+  padding-top: 2rem;
+}
+section.services-info .trainer-contact span{
+    color: var(--primary);
+}
+section.services-info .trainer-contact p{
+    color: var(--secondary);
+    padding-top: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 2rem;
+}
+section.services-info .trainer-contact button:hover{
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+
+
+section.services-info #diet-info{
+    margin-bottom: 6rem;
+}
+
+section.services-info #diet-info ol{
+    text-align: left;
+    margin-left: -100px;
+    margin-bottom: 3rem;
+}
+section.services-info #diet-info ol li{
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+section.services-info #diet-info img{
+    border-radius: 5%;
+    object-fit: cover;
+    border: 4px groove var(--pure);
+   height: 420px; 
+   width: 550px;
+   margin-bottom: 2rem;
+  /* margin-left: 280px;*/
+}
+section.services-info #diet-info p{
+    color: var(--pure);
+    margin-bottom: 2.5rem;
+}
+section.services-info #diet-info span{
+    color: var(--primary);
+}
+.hr-services{
+    color: var(--pure);
+    width: 1898px;
+    height: 5px;
+    background: var(--pure);
+}
+
+/*-------------------------------------------------------------------------*/
+/*--------------------------------Gallery----------------------------------*/
+
+section.gallery{
+    background-color: var(--pure);
+    clip-path: polygon(0 0,100% 0,100% 100%,48% 92%,0 100%);
+    padding-bottom: 10.5rem;
+}
+section.gallery .container .marquee-heading{
+    background-color: var(--secondary);
+    width: 400px;
+    margin-left: 310px;
+    margin-bottom: 2rem;
+}
+section.gallery .container .marquee-heading marquee{
+color: var(--primary);
+}
+section.gallery .container .marquee-heading h1{
+    font-size: 2rem;
+}
+section.gallery .container p{
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+section.gallery .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+section.gallery .container .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+section.gallery .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(61,207,211,0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all .3s ease;
+}
+section.gallery .card-wrapper .card :hover.overlay{
+    opacity: 0.9;
+}
+section.gallery .card-wrapper .card span{
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: 3.8rem;
+    color: var(--light);
+}
+section.gallery .card-wrapper .card a{
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: 9.2rem;
+    text-decoration: none;
+    color: var(--secondary);
+}
+section.gallery .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+    border: 4px groove var(--secondary);
+}
+
+
+section.gallery-img{
+    background-color: var(--ternary)
+}
+
+section.gallery-img .container marquee{
+    background-color: var(--secondary);
+    width: 450px;
+    color: var(--primary);
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    font-size: 2rem;
+    height: 50px;
+    margin-top: -2rem;
+    margin-bottom: 6rem;
+}
+
+section.gallery-img .container{
+    margin-left: 300px;
+    margin-right: 0;
+}
+section.gallery-img .container #gym-img img{
+    height: 350px;
+    width: 400px;
+    border: 5px solid var(--dark);
+    margin: 3rem 2rem;
+    object-fit: cover;
+}
+section.gallery-img .container #gym-img ol{
+    text-align: left;
+    margin-left: -150px;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+section.gallery-img .container ol li{
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+section.gallery-img .container span{
+    color: var(--secondary);
+    margin-left: 425px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+
+section.gallery-img .container #dance-img img{
+    height: 350px;
+    width: 400px;
+    border: 5px solid var(--dark);
+    margin: 3rem 2rem;
+    object-fit: cover;
+}
+section.gallery-img .container #dance-img ol{
+    text-align: left;
+    margin-left: -150px;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+section.gallery-img .container #yoga-img img{
+    height: 350px;
+    width: 400px;
+    border: 5px solid var(--dark);
+    margin: 3rem 2rem;
+    object-fit: cover;
+}
+section.gallery-img .container #yoga-img ol{
+    text-align: left;
+    margin-left: -150px;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+section.gallery-img .container #zumba-img img{
+    height: 350px;
+    width: 400px;
+    border: 5px solid var(--dark);
+    margin: 3rem 2rem;
+    object-fit: cover;
+}
+section.gallery-img .container #zumba-img ol{
+    text-align: left;
+    margin-left: -150px;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+section.gallery-img .container #trainer-img img{
+    height: 350px;
+    width: 400px;
+    border: 5px solid var(--dark);
+    margin: 3rem 2rem;
+    object-fit: cover;
+}
+section.gallery-img .container #trainer-img ol{
+    text-align: left;
+    margin-left: -150px;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+section.gallery-img .container #diet-img img{
+    height: 350px;
+    width: 400px;
+    border: 5px solid var(--dark);
+    margin: 3rem 2rem;
+    object-fit: cover;
+}
+section.gallery-img .container #diet-img ol{
+    text-align: left;
+    margin-left: -150px;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/********************************************************************/
+/**************************Our Blogs*********************************/
+
+
+
+section.blog{
+    background-color: var(--secondary);
+}
+section.blog .container .blog-marquee{
+    width: 420px;
+    margin-left: 280px;
+}
+section.blog .container .blog-marquee marquee{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+}
+section.blog .container #blog-p{
+    text-align: center;
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+}
+
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 3rem;
+}
+section.blog .card-wrapper .card{
+    background-color: var(--pure);
+    border: 5px solid var(--ternary);
+    margin-top: 6rem;
+}
+section.blog .card-wrapper .card img{
+    width: 335px;
+    height: 270px;
+}
+section.blog .card-wrapper .card .card-content{
+    padding: 2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+section.blog .card-wrapper .card .card-content p{
+    margin-bottom: 2rem;
+}
+section.blog .card-wrapper .card .card-content a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+section.blog .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+section.blog .card-wrapper .card .card-content span{
+    color:var(--ternary);
+    font-size: 1rem;
+}
+
+section.blog-details{
+    background-color: var(--ternary);
+}
+section.blog-details .container .blog-marquee2{
+    width: 430px;
+    margin-left: 325px;
+}
+section.blog-details .container .blog-marquee2 marquee{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+    background-color: var(--secondary);
+}
+section.blog-details .container .blog-details-p{
+    text-align: center;
+}
+section.blog-details .container p{
+    color: var(--dark);
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+}
+section.blog-details .container #diet-blog{
+    border: 4px solid var(--secondary);
+    background-color: var(--light);
+    margin-bottom: 6rem;
+}
+section.blog-details .container #diet-blog h2{
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-top: 0rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: var(--secondary);
+    width: 1115px;
+    height: 80px;
+    padding-top: 0.8rem;
+}
+section.blog-details .container #diet-blog img{
+    height: 380px;
+    width: 520px;
+    border: 5px solid var(--dark);
+    margin: 3rem;
+    object-fit: cover;
+    align-items: center;
+    margin-left: 270px;
+}
+section.blog-details .container #diet-blog p{
+    color: var(--secondary);
+}
+section.blog-details .container #diet-blog span{
+    color: var(--secondary);
+    text-align: center;
+    margin-left: 470px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+
+section.blog-details .container #gym-blog{
+    border: 4px solid var(--secondary);
+    background-color: var(--light);
+    margin-bottom: 6rem;
+}
+section.blog-details .container #gym-blog h2{
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-top: 0rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: var(--secondary);
+    width: 1115px;
+    height: 80px;
+    padding-top: 0.8rem;
+}
+section.blog-details .container #gym-blog img{
+    height: 370px;
+    width: 600px;
+    border: 5px solid var(--dark);
+    margin: 3rem;
+    object-fit: cover;
+    align-items: center;
+    margin-left: 240px;
+}
+section.blog-details .container #gym-blog p{
+    color: var(--secondary);
+}
+section.blog-details .container #gym-blog span{
+    color: var(--secondary);
+    text-align: center;
+    margin-left: 470px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+
+section.blog-details .container #yoga-blog{
+    border: 4px solid var(--secondary);
+    background-color: var(--light);
+}
+section.blog-details .container #yoga-blog h2{
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-top: 0rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: var(--secondary);
+    width: 1115px;
+    height: 80px;
+    padding-top: 0.8rem;
+}
+section.blog-details .container #yoga-blog img{
+    height: 370px;
+    width: 600px;
+    border: 5px solid var(--dark);
+    margin: 3rem;
+    object-fit: cover;
+    align-items: center;
+    margin-left: 240px;
+}
+section.blog-details .container #yoga-blog p{
+    color: var(--secondary);
+}
+section.blog-details .container #yoga-blog span{
+    color: var(--secondary);
+    text-align: center;
+    margin-left: 470px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+/****************************************************************************/
+/*****************************Contact****************************************/
+
+section.contact{
+    background-color: var(--pure);
+}
+section.contact .container .contact-marquee1{
+    width: 420px;
+    margin-left: 280px;
+    margin-bottom: 3rem;
+}
+section.contact .container .contact-marquee1 marquee{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+    background-color: var(--secondary);
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+}
+section.contact .container #contact-p{
+    color: var(--ternary);
+    text-align: center;
+    margin-left: -110px;
+    font-size: 1rem;
+    margin-bottom: 7rem;
+}
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    margin-left: -100px;
+    margin-bottom: 4rem;
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;  
+}
+section.contact .card-wrapper .card .phone-img{
+    height: 42%;
+    width: 26%;
+    margin-bottom: 2rem;
+}
+section.contact .card-wrapper .card .msg-img{
+    height: 31%;
+    width: 24%;
+    margin-bottom: 3rem;
+}
+section.contact .card-wrapper .card .office-img{
+    height: 38%;
+    width: 29%;
+    margin-bottom: 2rem;
+}
+
+section.contact .card-wrapper .card h1{
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card  h6{
+    font-size: 1rem;
+    color: var(--ternary);
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap2{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--secondary);
+}
+section.contact .input-wrap-2 textarea{
+margin-bottom: 2rem;
+padding: 0.5rem;
+border: 1px solid var(--secondary);
+width: 100%;
+}
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--secondary);
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border: 1px solid var(--secondary);
+}
+section.contact .submit{
+    text-align: center;
+    align-items: center;
+    margin-left: -5rem;
+}
+section.contact .submit .btn{
+ background-color: var(--primary);   
+ transition: all .3s ease;
+ border: 2px solid var(--secondary);
+ padding: 0.8rem 3rem;
+ font-size: 1rem;
+ font-weight: 600;
+ outline: none;
+ cursor: pointer;
+ text-transform: uppercase;
+}
+section.contact .submit .btn:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+section.contact button .btn .btn-primary{
+    margin-top: -20px;
+}
+section.contact .input-wrap span{
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1rem;
+}
+section.contact .input-wrap .name input{
+    width: 386px;
+}
+section.contact .input-wrap .name span{
+    margin-left: -8px;
+}
+section.contact .input-wrap .email input{
+    width: 386px;
+}
+section.contact .input-wrap .email span{
+    margin-left: -50px;
+}
+section.contact .input-wrap .address input{
+    width: 386px;
+}
+section.contact .input-wrap .address span{
+    margin-left: -27px;
+}
+
+section.contact .input-wrap .opn input{
+    width: 386px;
+}
+section.contact .input-wrap .opn span{
+    margin-left: -50px;
+}
+section.contact .input-wrap-2 textarea {
+    width: 386px;
+    margin-left: 95px;
+    margin-top: -30px;
+}
+section.contact .input-wrap-2 span{
+    color: var(--secondary);
+    font-weight: bold;
+    margin-left: -33px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+section.sec-form{
+    background-color: var(--ternary);
+}
+section.sec-form .container .contact-marquee1{
+    width: 420px;
+    margin-left: 280px;
+    margin-bottom: 3rem;
+}
+section.sec-form .container .contact-marquee1 marquee{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+    background-color: var(--secondary);
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+}
+section.sec-form .container #contact-p{
+    color: var(--black);
+    text-align: center;
+    margin-left: -110px;
+    font-size: 1rem;
+    margin-bottom: 7rem;
+}
+
+section.sec-form .name input{
+    width: 386px;
+}
+section.sec-form .email input{
+    width: 386px;
+}
+section.sec-form .address input{
+    width: 386px;
+}
+section.sec-form .address span{
+    margin-left: -1.1rem;
+}
+section.sec-form .opn input{
+    width: 386px;
+}
+section.sec-form .dateofbirth{
+    margin-left: -100px;
+}
+section.sec-form .dateofbirth input{
+    width: 386px;
+    margin-left: -360px;
+}
+section.sec-form .dateofbirth span{
+    margin-left: -0.5rem;
+    width: 100px;
+}
+section.sec-form .joining-date{
+    margin-left: -70px;
+    height: 70px;
+}
+section.sec-form .joining-date input{
+    width: 386px;
+}
+section.sec-form .input-wrap-2{
+    width: 386px;
+} 
+section.sec-form .input-wrap-2 textarea{
+    width: 386px;
+    margin-left: 103px;
+    margin-top: -35px;
+} 
+section.sec-form .input-wrap-2 span{
+    margin-left: -1.5rem;
+}
+section.sec-form span{
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: bold;
+}
+section.sec-form .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.sec-form .input-wrap2{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--secondary);
+}
+section.sec-form .input-wrap input.dobdate{
+    width: 250px;
+    text-align: center;
+}
+section.sec-form .input-wrap .dateofbirth{
+    width: 400px;
+}
+section.sec-form .input-wrap input.jdate{
+    width: 250px;
+    margin-left: 0px;
+    text-align: center;
+}
+section.sec-form .input-wrap .joining-date{
+    width: 600px;
+}
+section.sec-form .input-wrap-2 textarea{
+margin-bottom: 2rem;
+padding: 0.5rem;
+border: 1px solid var(--secondary);
+width: 100%;
+}
+section.sec-form input{
+    padding: 0.5rem;
+    border: 1px solid var(--secondary);
+    font-size: 0.9rem;
+}
+section.sec-form .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border: 1px solid var(--secondary);
+}
+section.sec-form .submit{
+    text-align: center;
+    align-items: center;
+    margin-left: -5rem;
+}
+section.sec-form .submit .btn{
+ background-color: var(--primary);   
+ transition: all .3s ease;
+ border: 2px solid var(--secondary);
+ padding: 0.8rem 3rem;
+ font-size: 1rem;
+ font-weight: 600;
+ outline: none;
+ cursor: pointer;
+ text-transform: uppercase;
+}
+section.sec-form .submit .btn:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+section.sec-form button .btn .btn-primary{
+    margin-top: -20px;
+}
+
+
+
+/****************************************************************************/
+/*****************************Contactpage.php********************************/
+
+body.bodyphp{
+    background-color: var(--ternary);
+    color: var(--secondary);
+}
+section.blacksection{
+    height: 800px;
+}
+/***************************************************************************/
+/******************************Advanced Footer****************************/
+
+
+  
