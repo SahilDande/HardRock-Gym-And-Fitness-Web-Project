@@ -1,5 +1,5 @@
 # HardRock-Gym-And-Fitness-Web-Project
-<h3><marquee behaviour="alternate" direction="Left" scrollamount="20">Welcome To My Diploma's Industrial Training Project!</marquee></h3>
+<h3><marquee behaviour="alternate" direction="Left" scrollamount="60">Welcome To My Diploma's Industrial Training Project!</marquee></h3>
 <h1 align="center">Hi 👋, I'm Sahil Sanjay Dande</h1>
 <h3 align="center">A passionate Software Application & Web-Developer From India.</h3>
 
